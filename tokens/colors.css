@@ -1,0 +1,52 @@
+:root {
+  /* Base ink */
+  --ink: #111114;
+  --body: #4A4A55;
+  --paper: #FFFDFD;
+  --white: #FFFFFF;
+
+  /* Five accents */
+  --violet: #7B5CFF;
+  --pink: #FF4FA3;
+  --coral: #FF7A45;
+  --mint: #3FCF8E;
+  --sky: #3E9BFF;
+
+  /* Darkened label variants, for small type on the near-white ground */
+  --violet-label: #7B5CFF;
+  --pink-label: #FF4FA3;
+  --coral-label: #D4521C;
+  --mint-label: #1E9A66;
+  --sky-label: #1F6FD6;
+
+  /* Accent tints for chips and KPI tiles */
+  --violet-tint: rgba(123, 92, 255, 0.10);
+  --pink-tint: rgba(255, 79, 163, 0.10);
+  --coral-tint: rgba(255, 122, 69, 0.10);
+  --mint-tint: rgba(63, 207, 142, 0.12);
+  --sky-tint: rgba(62, 155, 255, 0.10);
+
+  /* Soft chart fills, the lighter half of a paired bar */
+  --violet-soft: #C3A9FF;
+  --pink-soft: #FF9CC8;
+  --sky-soft: #9CC9FF;
+
+  /* Aurora orb stops */
+  --orb-1: #9EC2FF;
+  --orb-2: #FFB6DE;
+  --orb-3: #FFCFA8;
+  --orb-4: #C3A9FF;
+
+  /* Semantic aliases */
+  --text-display: var(--ink);
+  --text-body: var(--body);
+  --surface-page: var(--paper);
+  --surface-card: rgba(255, 255, 255, 0.55);
+  --surface-card-strong: rgba(255, 255, 255, 0.62);
+  --border-card: rgba(255, 255, 255, 0.80);
+  --rule-hairline: rgba(17, 17, 20, 0.07);
+
+  /* Signature gradient, pink into purple into sky */
+  --gradient-headline: linear-gradient(90deg, #FF4FA3, #7B5CFF 60%, #3E9BFF);
+  --gradient-panel: linear-gradient(150deg, rgba(255, 79, 163, 0.12), rgba(123, 92, 255, 0.14));
+}

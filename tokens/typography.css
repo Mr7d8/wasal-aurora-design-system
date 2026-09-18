@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap");
+
+:root {
+  --font-display: "Bricolage Grotesque", Inter, Manrope, system-ui, sans-serif;
+  --font-body: "Bricolage Grotesque", Inter, Manrope, system-ui, sans-serif;
+
+  /* Deck scale, authored against a 1920x1080 stage */
+  --size-display: 132px;   /* divider phrase */
+  --size-cover: 104px;     /* cover headline */
+  --size-headline: 72px;   /* slide headline */
+  --size-headline-sm: 64px;/* headline on dense slides */
+  --size-stat: 104px;      /* KPI number */
+  --size-card-title: 40px;
+  --size-body-lg: 34px;
+  --size-body: 29px;
+  --size-eyebrow: 24px;    /* hard floor, never smaller */
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-black: 800;
+
+  --leading-display: 0.96;
+  --leading-headline: 1.04;
+  --leading-body: 1.5;
+
+  --tracking-display: -4px;
+  --tracking-headline: -2px;
+  --tracking-eyebrow: 3px;
+}

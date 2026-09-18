@@ -1,0 +1,15 @@
+:root {
+  --radius-chip: 18px;
+  --radius-card: 26px;
+  --radius-card-lg: 28px;
+  --radius-pill: 999px;
+
+  --blur-glass: 26px;
+  --shadow-card: 0 20px 60px rgba(90, 70, 150, 0.10);
+  --shadow-card-float: 0 20px 60px rgba(90, 70, 150, 0.14);
+  --shadow-device: 0 44px 100px rgba(60, 40, 110, 0.30);
+  --shadow-orb: 0 24px 60px rgba(123, 92, 255, 0.24);
+
+  --icon-stroke: 1.5px;
+  --icon-chip-size: 58px;
+}

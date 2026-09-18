@@ -1,0 +1,24 @@
+<!-- @dsCard group="Components" viewport="700x330" subtitle="Glass card, statement panel, orb" name="Surfaces" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<style>body{margin:0;padding:20px;font-family:var(--font-body);color:var(--body);background:url(../../assets/bg-aurora.png) center/cover no-repeat,var(--paper)}
+.g{display:flex;gap:18px;align-items:flex-start}</style></head><body>
+<div class="g">
+  <div style="flex:1;display:flex;flex-direction:column;gap:16px">
+    <div style="background:var(--surface-card);backdrop-filter:blur(var(--blur-glass));border:1px solid var(--border-card);border-radius:var(--radius-card);box-shadow:var(--shadow-card);padding:20px 22px;display:flex;flex-direction:column;gap:10px">
+      <div style="width:46px;height:46px;border-radius:var(--radius-chip);background:var(--sky-tint);display:flex;align-items:center;justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E9BFF" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div>
+      <span style="font-size:15px;font-weight:700;color:var(--ink)">GlassCard</span>
+      <span style="font-size:13px;line-height:1.5">Default container. 55 percent white, 26px blur, white rim.</span>
+    </div>
+    <div style="background:var(--surface-card-strong);backdrop-filter:blur(var(--blur-glass));border:1px solid var(--border-card);border-radius:var(--radius-card);box-shadow:var(--shadow-card-float);padding:16px 20px;display:flex;flex-direction:column;gap:4px">
+      <span style="font-size:15px;font-weight:700;color:var(--ink)">GlassCard, strong</span>
+      <span style="font-size:13px">Floating over a device mockup.</span>
+    </div>
+    <div style="background:var(--gradient-panel);border-radius:var(--radius-card);padding:16px 20px;font-size:14px;font-weight:600;color:var(--ink)">StatementPanel, one takeaway per slide</div>
+  </div>
+  <div style="position:relative;width:250px;height:250px;display:flex;align-items:center;justify-content:center;flex:none">
+    <div style="position:absolute;inset:-32px;border-radius:50%;background:conic-gradient(from 205deg,var(--orb-1),var(--orb-2),var(--orb-3),var(--orb-4),var(--orb-1));filter:blur(30px);opacity:.75"></div>
+    <div style="position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 30% 22%,rgba(255,255,255,.92),rgba(255,255,255,.18) 38%,rgba(255,255,255,0) 58%),conic-gradient(from 195deg,#A8C8FF,#EEC4FF,#FFC9A8,#C8B4FF,#A8C8FF);box-shadow:inset 0 -26px 48px rgba(255,255,255,.75),inset 0 16px 32px rgba(255,255,255,.5),var(--shadow-orb)"></div>
+    <span style="position:relative;font-size:16px;font-weight:700;color:var(--ink)">GradientOrb</span>
+  </div>
+</div>
+</body></html>

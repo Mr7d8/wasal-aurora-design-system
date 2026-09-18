@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F4FA;font-family:'Bricolage Grotesque',Inter,Manrope,sans-serif}
+a{color:#7B5CFF}a:hover{color:#FF4FA3}
+</style>
+</helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%" data-uneditable="">
+
+<section data-label="Cover" data-screen-label="01" data-speaker-notes="Frame the session: this is about working alongside AI, not just querying it." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:100px 104px;display:flex;align-items:center;gap:90px;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <div style="flex:1.15;display:flex;flex-direction:column;gap:44px">
+    <img src="./wasal-logo.png" alt="wasal" style="width:216px;height:auto">
+    <h1 style="margin:0;font-size:104px;line-height:0.98;letter-spacing:-3px;font-weight:800;color:#111114;text-wrap:pretty">Working With AI, <span style="background:linear-gradient(90deg,#FF4FA3,#7B5CFF);-webkit-background-clip:text;background-clip:text;color:transparent">Not Just Asking It Questions</span></h1>
+    <p style="margin:0;font-size:34px;line-height:1.5;max-width:780px">A practical look at how Claude can boost the team's output.</p>
+    <div style="display:flex;align-items:center;gap:20px;margin-top:8px">
+      <div style="width:6px;height:74px;border-radius:4px;background:linear-gradient(180deg,#FF4FA3,#7B5CFF)"></div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <span style="font-size:30px;font-weight:700;color:#111114">Ossama Haddioui</span>
+        <span style="font-size:26px">Growth Marketing Manager</span>
+      </div>
+    </div>
+  </div>
+  <div style="flex:0.95;position:relative;height:880px;display:flex;align-items:center;justify-content:flex-end;padding-right:20px">
+    <div style="position:absolute;width:620px;height:620px;border-radius:50%;background:conic-gradient(from 200deg,#CFE0FF,#FFD9EC,#FFE6D2,#E0D4FF,#CFE0FF);filter:blur(70px);opacity:.55"></div>
+    <div style="position:relative;box-sizing:border-box;width:404px;height:830px;border-radius:58px;background:linear-gradient(150deg,#2A2A33,#14141A);padding:13px;box-shadow:0 50px 120px rgba(60,40,110,.32),0 4px 0 rgba(255,255,255,.35) inset;transform:rotate(-3deg)">
+      <div style="box-sizing:border-box;width:100%;height:100%;border-radius:48px;background:#FFFFFF;overflow:hidden;display:flex;flex-direction:column;padding:26px 24px;gap:20px">
+        <div style="align-self:center;width:118px;height:26px;border-radius:14px;background:#14141A"></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:6px">
+          <img src="./wasal-logo.png" alt="wasal" style="width:104px;height:auto">
+          <div style="width:34px;height:34px;border-radius:12px;background:rgba(123,92,255,.12)"></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <span style="font-size:26px;line-height:1.25;letter-spacing:2px;text-transform:uppercase;color:#7B5CFF;font-weight:600">Daily brief</span>
+          <span style="font-size:34px;font-weight:700;color:#111114;letter-spacing:-1px">This morning, 07:00</span>
+        </div>
+        <div style="display:flex;gap:14px">
+          <div style="flex:1;border-radius:20px;background:rgba(63,207,142,.12);padding:20px 18px;display:flex;flex-direction:column;gap:6px">
+            <span style="font-size:38px;font-weight:800;color:#3FCF8E;letter-spacing:-1px">+18%</span>
+            <span style="font-size:24px;color:#4A4A55">Meta Ads ROAS</span>
+          </div>
+          <div style="flex:1;border-radius:20px;background:rgba(62,155,255,.12);padding:20px 18px;display:flex;flex-direction:column;gap:6px">
+            <span style="font-size:38px;font-weight:800;color:#3E9BFF;letter-spacing:-1px">9.4k</span>
+            <span style="font-size:24px;color:#4A4A55">Sessions</span>
+          </div>
+        </div>
+        <div style="border-radius:22px;background:linear-gradient(140deg,rgba(255,79,163,.12),rgba(123,92,255,.14));padding:22px 20px;display:flex;flex-direction:column;gap:16px">
+          <span style="font-size:25px;color:#111114;font-weight:600">Search intent, top movers</span>
+          <div style="display:flex;align-items:flex-end;gap:10px;height:96px">
+            <div style="flex:1;height:44%;border-radius:8px;background:#7B5CFF;opacity:.85"></div>
+            <div style="flex:1;height:72%;border-radius:8px;background:#FF4FA3;opacity:.85"></div>
+            <div style="flex:1;height:58%;border-radius:8px;background:#3E9BFF;opacity:.85"></div>
+            <div style="flex:1;height:96%;border-radius:8px;background:#FF7A45;opacity:.85"></div>
+            <div style="flex:1;height:36%;border-radius:8px;background:#3FCF8E;opacity:.85"></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:14px;align-items:center;border-radius:18px;background:rgba(17,17,20,.04);padding:16px 18px">
+          <div style="width:30px;height:30px;border-radius:10px;background:rgba(123,92,255,.16)"></div>
+          <span style="font-size:24px;color:#4A4A55">Weekly social report published</span>
+        </div>
+      </div>
+    </div>
+    <div style="position:absolute;top:70px;left:-40px;background:rgba(255,255,255,.62);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.85);box-shadow:0 20px 60px rgba(90,70,150,.14);border-radius:24px;padding:18px 24px;display:flex;align-items:center;gap:14px">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF4FA3" stroke-width="1.6" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="4.5"></rect><circle cx="12" cy="12" r="3.6"></circle></svg>
+      <span style="font-size:26px;font-weight:600;color:#111114">Instagram report</span>
+    </div>
+    <div style="position:absolute;top:286px;left:-70px;background:rgba(255,255,255,.62);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.85);box-shadow:0 20px 60px rgba(90,70,150,.14);border-radius:24px;padding:18px 24px;display:flex;align-items:center;gap:14px">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7B5CFF" stroke-width="1.6" stroke-linecap="round"><path d="M4 18V6"></path><path d="M4 18h16"></path><path d="M8 15v-4"></path><path d="M13 15V8"></path><path d="M18 15v-6"></path></svg>
+      <span style="font-size:26px;font-weight:600;color:#111114">Mixpanel</span>
+    </div>
+    <div style="position:absolute;bottom:196px;left:-46px;background:rgba(255,255,255,.62);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.85);box-shadow:0 20px 60px rgba(90,70,150,.14);border-radius:24px;padding:18px 24px;display:flex;align-items:center;gap:14px">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3FCF8E" stroke-width="1.6" stroke-linecap="round"><path d="M13 3L5 14h6l-1 7 8-11h-6z"></path></svg>
+      <span style="font-size:26px;font-weight:600;color:#111114">Sent automatically</span>
+    </div>
+    <div style="position:absolute;bottom:74px;left:10px;background:rgba(255,255,255,.62);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.85);box-shadow:0 20px 60px rgba(90,70,150,.14);border-radius:22px;padding:16px 20px;display:flex;align-items:center;gap:16px">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF7A45" stroke-width="1.6" stroke-linecap="round"><path d="M12 20s-7-4.4-7-9.2A4 4 0 0 1 12 8a4 4 0 0 1 7 2.8C19 15.6 12 20 12 20z"></path></svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E9BFF" stroke-width="1.6" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-3.3-6.5"></path><path d="M4 20l1.6-4.2"></path></svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7B5CFF" stroke-width="1.6" stroke-linecap="round"><path d="M21 4L3 11l6 2 2 6z"></path></svg>
+    </div>
+  </div>
+</section>
+
+<section data-label="The bottleneck" data-screen-label="02" data-speaker-notes="The gap is execution, not strategy. Name the four time sinks." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:88px 104px;display:flex;flex-direction:column;justify-content:center;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <img src="./wasal-logo.png" alt="wasal" style="width:150px;height:auto">
+  <div style="display:flex;gap:86px;margin-top:60px;align-items:flex-start">
+    <div style="flex:1.05">
+      <span style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#7B5CFF">The problem</span>
+      <h2 style="margin:26px 0 0;font-size:74px;line-height:1.04;letter-spacing:-2px;font-weight:800;color:#111114;text-wrap:pretty">The real bottleneck is <span style="color:#FF4FA3">execution time</span>, not ideas</h2>
+    </div>
+    <div style="flex:0.95;background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);border-radius:26px;box-shadow:0 20px 60px rgba(90,70,150,.10);padding:44px 46px">
+      <p style="margin:0;font-size:32px;line-height:1.55">Everyone here already knows what needs to get done. What eats the week is the manual work between the idea and the finished thing: pulling data, formatting reports, building decks, first drafts. That is exactly what AI closes today.</p>
+    </div>
+  </div>
+  <div style="display:flex;gap:20px;margin-top:72px;flex-wrap:wrap">
+    <span style="font-size:26px;font-weight:600;color:#111114;background:rgba(123,92,255,.10);border-radius:999px;padding:18px 32px">Pulling data</span>
+    <span style="font-size:26px;font-weight:600;color:#111114;background:rgba(255,79,163,.10);border-radius:999px;padding:18px 32px">Formatting reports</span>
+    <span style="font-size:26px;font-weight:600;color:#111114;background:rgba(62,155,255,.10);border-radius:999px;padding:18px 32px">Building decks</span>
+    <span style="font-size:26px;font-weight:600;color:#111114;background:rgba(63,207,142,.10);border-radius:999px;padding:18px 32px">First drafts</span>
+  </div>
+</section>
+
+<section data-label="Part 1 divider" data-screen-label="03" data-speaker-notes="Everything ahead is live inside Wasal already." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:100px 140px;display:flex;flex-direction:column;justify-content:center;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <span style="font-size:26px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#7B5CFF">Part 1</span>
+  <h2 style="margin:34px 0 0;font-size:132px;line-height:0.96;letter-spacing:-4px;font-weight:800;background:linear-gradient(90deg,#FF4FA3,#7B5CFF 60%,#3E9BFF);-webkit-background-clip:text;background-clip:text;color:transparent">Proof, not theory</h2>
+  <p style="margin:44px 0 0;font-size:34px;line-height:1.5;max-width:1000px">Everything on the next slides is already running inside Wasal. No pilot, no vendor promise, built and used daily.</p>
+</section>
+
+<section data-label="Reporting" data-screen-label="04" data-speaker-notes="Four reporting jobs that now run without manual work." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:76px 104px;display:flex;flex-direction:column;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start">
+    <img src="./wasal-logo.png" alt="wasal" style="width:150px;height:auto">
+    <span style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1F6FD6">Running today</span>
+  </div>
+  <h2 style="margin:34px 0 0;font-size:64px;line-height:1.04;letter-spacing:-2px;font-weight:800;color:#111114;max-width:1150px;text-wrap:pretty">Reporting that used to take hours <span style="color:#3E9BFF">now runs itself</span></h2>
+  <div style="flex:1;display:flex;gap:70px;margin-top:44px;align-items:center">
+    <div style="flex:1.05;display:flex;flex-direction:column;gap:18px">
+      <div style="background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);box-shadow:0 20px 60px rgba(90,70,150,.10);border-radius:24px;padding:26px 30px;display:flex;gap:22px;align-items:center">
+        <div style="flex:none;width:56px;height:56px;border-radius:17px;background:rgba(62,155,255,.12);display:flex;align-items:center;justify-content:center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3E9BFF" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg></div>
+        <p style="margin:0;font-size:27px;line-height:1.4">Daily Meta Ads and Mixpanel brief sent automatically every morning.</p>
+      </div>
+      <div style="background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);box-shadow:0 20px 60px rgba(90,70,150,.10);border-radius:24px;padding:26px 30px;display:flex;gap:22px;align-items:center">
+        <div style="flex:none;width:56px;height:56px;border-radius:17px;background:rgba(255,79,163,.12);display:flex;align-items:center;justify-content:center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF4FA3" stroke-width="1.5" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="4.5"></rect><circle cx="12" cy="12" r="3.5"></circle></svg></div>
+        <p style="margin:0;font-size:27px;line-height:1.4">Weekly Instagram and social report published live.</p>
+      </div>
+      <div style="background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);box-shadow:0 20px 60px rgba(90,70,150,.10);border-radius:24px;padding:26px 30px;display:flex;gap:22px;align-items:center">
+        <div style="flex:none;width:56px;height:56px;border-radius:17px;background:rgba(63,207,142,.12);display:flex;align-items:center;justify-content:center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3FCF8E" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M16.5 16.5L21 21"></path></svg></div>
+        <p style="margin:0;font-size:27px;line-height:1.4">In-app search intent dashboard showing what customers actually look for.</p>
+      </div>
+      <div style="background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);box-shadow:0 20px 60px rgba(90,70,150,.10);border-radius:24px;padding:26px 30px;display:flex;gap:22px;align-items:center">
+        <div style="flex:none;width:56px;height:56px;border-radius:17px;background:rgba(255,122,69,.12);display:flex;align-items:center;justify-content:center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF7A45" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></div>
+        <p style="margin:0;font-size:27px;line-height:1.4">A new executive daily digest is being built right now, the same kind of tool this workshop is about.</p>
+      </div>
+    </div>
+    <div style="flex:0.95;position:relative;height:100%;display:flex;align-items:center;justify-content:center">
+      <div style="position:absolute;width:520px;height:520px;border-radius:50%;background:conic-gradient(from 210deg,#9EC2FF,#FFB6DE,#FFCFA8,#C3A9FF,#9EC2FF);filter:blur(64px);opacity:.5"></div>
+      <div style="position:relative;box-sizing:border-box;width:340px;height:690px;border-radius:50px;background:linear-gradient(150deg,#2A2A33,#14141A);padding:11px;box-shadow:0 44px 100px rgba(60,40,110,.30);transform:rotate(3deg)">
+        <div style="box-sizing:border-box;width:100%;height:100%;border-radius:40px;background:#fff;overflow:hidden;display:flex;flex-direction:column;padding:22px 20px;gap:16px">
+          <div style="align-self:center;width:96px;height:22px;border-radius:12px;background:#14141A"></div>
+          <span style="font-size:28px;font-weight:700;color:#111114;letter-spacing:-.5px">Weekly social</span>
+          <div style="border-radius:18px;overflow:hidden;aspect-ratio:4/5;position:relative">
+            <img src="./photo-creator.png" alt="creator moment" style="width:100%;height:100%;object-fit:cover;display:block">
+            <span style="position:absolute;bottom:12px;left:12px;font-size:24px;font-weight:600;color:#111114;background:rgba(255,255,255,.72);backdrop-filter:blur(14px);border-radius:999px;padding:6px 16px">@itslina</span>
+          </div>
+          <div style="display:flex;gap:10px">
+            <div style="flex:1;border-radius:18px;background:rgba(255,79,163,.12);padding:16px 14px;display:flex;flex-direction:column;gap:4px">
+              <span style="font-size:32px;font-weight:800;color:#FF4FA3;letter-spacing:-1px">+34%</span>
+              <span style="font-size:24px;line-height:1.2;color:#4A4A55">Reach</span>
+            </div>
+            <div style="flex:1;border-radius:18px;background:rgba(123,92,255,.12);padding:16px 14px;display:flex;flex-direction:column;gap:4px">
+              <span style="font-size:32px;font-weight:800;color:#7B5CFF;letter-spacing:-1px">612</span>
+              <span style="font-size:24px;line-height:1.2;color:#4A4A55">Saves</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="position:absolute;top:34px;left:-44px;background:rgba(255,255,255,.62);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.85);box-shadow:0 20px 60px rgba(90,70,150,.14);border-radius:22px;padding:16px 22px;display:flex;align-items:center;gap:14px">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF4FA3" stroke-width="1.6" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="4.5"></rect><circle cx="12" cy="12" r="3.6"></circle></svg>
+        <span style="font-size:25px;font-weight:600;color:#111114">Published live</span>
+      </div>
+      <div style="position:absolute;bottom:96px;right:-14px;background:rgba(255,255,255,.62);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.85);box-shadow:0 20px 60px rgba(90,70,150,.14);border-radius:22px;padding:16px 20px;display:flex;align-items:center;gap:16px">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E9BFF" stroke-width="1.6" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-3.3-6.5"></path><path d="M4 20l1.6-4.2"></path></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7B5CFF" stroke-width="1.6" stroke-linecap="round"><path d="M21 4L3 11l6 2 2 6z"></path></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF7A45" stroke-width="1.6" stroke-linecap="round"><path d="M12 20s-7-4.4-7-9.2A4 4 0 0 1 12 8a4 4 0 0 1 7 2.8C19 15.6 12 20 12 20z"></path></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-label="Internal tools" data-screen-label="05" data-speaker-notes="Two shipped tools, one person, AI as the engineering partner." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:76px 104px;display:flex;flex-direction:column;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start">
+    <img src="./wasal-logo.png" alt="wasal" style="width:150px;height:auto">
+    <span style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#7B5CFF">Built in house</span>
+  </div>
+  <h2 style="margin:34px 0 0;font-size:64px;line-height:1.04;letter-spacing:-2px;font-weight:800;color:#111114;max-width:1100px;text-wrap:pretty">Real internal tools, <span style="color:#7B5CFF">no dev team required</span></h2>
+  <div style="flex:1;display:flex;gap:64px;margin-top:40px;align-items:center;padding-bottom:10px">
+    <div style="flex:0.92;display:flex;flex-direction:column;gap:20px">
+      <div style="background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);box-shadow:0 20px 60px rgba(90,70,150,.10);border-radius:26px;padding:34px 34px;display:flex;flex-direction:column;gap:20px">
+        <div style="width:58px;height:58px;border-radius:18px;background:rgba(123,92,255,.12);display:flex;align-items:center;justify-content:center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7B5CFF" stroke-width="1.5" stroke-linecap="round"><path d="M4 19V5"></path><path d="M4 19h16"></path><path d="M8 16v-4"></path><path d="M13 16V8"></path><path d="M18 16v-7"></path></svg></div>
+        <p style="margin:0;font-size:28px;line-height:1.45">Wasal Friday campaign KPI dashboard tracking GMV, orders, CAC and affiliate performance against targets.</p>
+      </div>
+      <div style="background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);box-shadow:0 20px 60px rgba(90,70,150,.10);border-radius:26px;padding:34px 34px;display:flex;flex-direction:column;gap:20px">
+        <div style="width:58px;height:58px;border-radius:18px;background:rgba(255,122,69,.12);display:flex;align-items:center;justify-content:center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF7A45" stroke-width="1.5" stroke-linecap="round"><path d="M12 21s6.5-6.2 6.5-11A6.5 6.5 0 0 0 5.5 10c0 4.8 6.5 11 6.5 11z"></path><circle cx="12" cy="10" r="2.4"></circle></svg></div>
+        <p style="margin:0;font-size:28px;line-height:1.45">Out-of-home billboard inventory mapped for media planning.</p>
+      </div>
+      <div style="border-radius:26px;background:linear-gradient(150deg,rgba(255,79,163,.12),rgba(123,92,255,.14));padding:30px 34px">
+        <p style="margin:0;font-size:29px;line-height:1.4;color:#111114;font-weight:600">Both built and shipped by one person, with AI as the engineering partner.</p>
+      </div>
+    </div>
+    <div style="flex:1.08;position:relative;height:100%;display:flex;align-items:center;justify-content:center">
+      <div style="position:absolute;width:640px;height:520px;border-radius:50%;background:conic-gradient(from 210deg,#9EC2FF,#FFB6DE,#FFCFA8,#C3A9FF,#9EC2FF);filter:blur(70px);opacity:.5"></div>
+      <div style="position:relative;display:flex;flex-direction:column;align-items:center">
+        <div style="width:820px;border-radius:22px;background:linear-gradient(150deg,#2A2A33,#14141A);padding:14px 14px 18px;box-shadow:0 44px 100px rgba(60,40,110,.30)">
+          <div style="border-radius:12px;background:#fff;overflow:hidden;display:flex;flex-direction:column;padding:20px 22px;gap:16px;height:472px">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <img src="./wasal-logo.png" alt="wasal" style="width:96px;height:auto">
+              <div style="display:flex;gap:10px">
+                <span style="font-size:24px;color:#4A4A55">GMV</span>
+                <span style="font-size:24px;color:#4A4A55">Orders</span>
+                <span style="font-size:24px;color:#111114;font-weight:600">Campaign</span>
+              </div>
+            </div>
+            <span style="font-size:32px;font-weight:700;color:#111114;letter-spacing:-.5px">Wasal Friday, live tracking</span>
+            <div style="display:flex;gap:12px">
+            <div style="flex:1;border-radius:14px;background:rgba(123,92,255,.12);padding:14px 14px;display:flex;flex-direction:column;gap:4px">
+              <span style="font-size:30px;font-weight:800;color:#7B5CFF;letter-spacing:-1px">2.4M</span>
+              <span style="font-size:24px;line-height:1.2;color:#4A4A55">GMV, MAD</span>
+            </div>
+            <div style="flex:1;border-radius:14px;background:rgba(255,79,163,.12);padding:14px 14px;display:flex;flex-direction:column;gap:4px">
+              <span style="font-size:30px;font-weight:800;color:#FF4FA3;letter-spacing:-1px">8 412</span>
+              <span style="font-size:24px;line-height:1.2;color:#4A4A55">Orders</span>
+            </div>
+            <div style="flex:1;border-radius:14px;background:rgba(62,155,255,.12);padding:14px 14px;display:flex;flex-direction:column;gap:4px">
+              <span style="font-size:30px;font-weight:800;color:#3E9BFF;letter-spacing:-1px">38 MAD</span>
+              <span style="font-size:24px;line-height:1.2;color:#4A4A55">CAC</span>
+            </div>
+            <div style="flex:1;border-radius:14px;background:rgba(63,207,142,.12);padding:14px 14px;display:flex;flex-direction:column;gap:4px">
+              <span style="font-size:30px;font-weight:800;color:#3FCF8E;letter-spacing:-1px">112%</span>
+              <span style="font-size:24px;line-height:1.2;color:#4A4A55">Vs target</span>
+            </div>
+            </div>
+            <div style="flex:1;display:flex;gap:12px">
+              <div style="flex:1.4;border-radius:14px;background:rgba(17,17,20,.035);padding:16px;display:flex;align-items:flex-end;gap:10px">
+                <div style="flex:1;height:38%;border-radius:6px;background:#C3A9FF"></div>
+                <div style="flex:1;height:56%;border-radius:6px;background:#A88CFF"></div>
+                <div style="flex:1;height:47%;border-radius:6px;background:#FF9CC8"></div>
+                <div style="flex:1;height:74%;border-radius:6px;background:#FF4FA3"></div>
+                <div style="flex:1;height:62%;border-radius:6px;background:#7BB6FF"></div>
+                <div style="flex:1;height:92%;border-radius:6px;background:#7B5CFF"></div>
+                <div style="flex:1;height:70%;border-radius:6px;background:#3FCF8E"></div>
+              </div>
+              <div style="flex:1;border-radius:14px;background:rgba(17,17,20,.035);padding:16px;display:flex;flex-direction:column;gap:12px">
+                <span style="font-size:24px;color:#4A4A55">Affiliate top 3</span>
+                <div style="display:flex;align-items:center;gap:10px"><div style="width:24px;height:24px;border-radius:50%;background:rgba(255,79,163,.25)"></div><div style="flex:1;height:10px;border-radius:6px;background:rgba(255,79,163,.55)"></div></div>
+                <div style="display:flex;align-items:center;gap:10px"><div style="width:24px;height:24px;border-radius:50%;background:rgba(123,92,255,.25)"></div><div style="flex:1;height:10px;border-radius:6px;background:rgba(123,92,255,.5);margin-right:24px"></div></div>
+                <div style="display:flex;align-items:center;gap:10px"><div style="width:24px;height:24px;border-radius:50%;background:rgba(62,155,255,.25)"></div><div style="flex:1;height:10px;border-radius:6px;background:rgba(62,155,255,.45);margin-right:58px"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="width:900px;height:16px;border-radius:0 0 16px 16px;background:linear-gradient(180deg,#C9C9D2,#8E8E9C)"></div>
+        <div style="width:170px;height:6px;border-radius:0 0 8px 8px;background:#7A7A88"></div>
+      </div>
+      <div style="position:absolute;box-sizing:border-box;bottom:-14px;right:-46px;width:186px;height:372px;border-radius:32px;background:linear-gradient(150deg,#2A2A33,#14141A);padding:8px;box-shadow:0 30px 70px rgba(60,40,110,.30)">
+        <div style="box-sizing:border-box;width:100%;height:100%;border-radius:25px;background:#fff;overflow:hidden;display:flex;flex-direction:column;padding:14px 12px;gap:10px">
+          <div style="align-self:center;width:56px;height:14px;border-radius:8px;background:#14141A"></div>
+          <span style="font-size:24px;font-weight:700;color:#111114">Billboards</span>
+          <div style="flex:1;border-radius:14px;background:linear-gradient(160deg,#DCEBFF,#D9F5EA);position:relative">
+            <div style="position:absolute;top:26%;left:22%;width:14px;height:14px;border-radius:50%;background:#FF4FA3"></div>
+            <div style="position:absolute;top:52%;left:56%;width:14px;height:14px;border-radius:50%;background:#7B5CFF"></div>
+            <div style="position:absolute;top:72%;left:32%;width:14px;height:14px;border-radius:50%;background:#FF7A45"></div>
+          </div>
+        </div>
+      </div>
+      <div style="position:absolute;top:10px;left:-6px;background:rgba(255,255,255,.62);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.85);box-shadow:0 20px 60px rgba(90,70,150,.14);border-radius:22px;padding:14px 20px;display:flex;align-items:center;gap:12px">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3FCF8E" stroke-width="1.6" stroke-linecap="round"><path d="M4 12.5l5 5L20 6.5"></path></svg>
+        <span style="font-size:25px;font-weight:600;color:#111114">Shipped in a week</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-label="Data to decision" data-screen-label="06" data-speaker-notes="Search intent feeds catalog and campaign calls; ad audits catch weak creative early." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:88px 104px;display:flex;flex-direction:column;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <img src="./wasal-logo.png" alt="wasal" style="width:150px;height:auto">
+  <div style="display:flex;gap:80px;margin-top:56px;align-items:flex-start">
+    <div style="flex:0.85;padding-top:10px">
+      <span style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1E9A66">Decisions</span>
+      <h2 style="margin:26px 0 0;font-size:78px;line-height:1.02;letter-spacing:-2px;font-weight:800;color:#111114;text-wrap:pretty">From raw data to <span style="background:linear-gradient(90deg,#3FCF8E,#3E9BFF);-webkit-background-clip:text;background-clip:text;color:transparent">a decision</span></h2>
+    </div>
+    <div style="flex:1.15;display:flex;flex-direction:column;gap:26px">
+      <div style="background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);border-radius:26px;box-shadow:0 20px 60px rgba(90,70,150,.10);padding:40px 42px;display:flex;gap:28px;align-items:flex-start">
+        <div style="flex:none;width:60px;height:60px;border-radius:18px;background:rgba(63,207,142,.10);display:flex;align-items:center;justify-content:center"><svg width="29" height="29" viewBox="0 0 24 24" fill="none" stroke="#3FCF8E" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M16.5 16.5L21 21"></path></svg></div>
+        <p style="margin:0;font-size:30px;line-height:1.5">Search intent analysis surfaces the exact products and brands customers search for, feeding catalog and campaign decisions.</p>
+      </div>
+      <div style="background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);border-radius:26px;box-shadow:0 20px 60px rgba(90,70,150,.10);padding:40px 42px;display:flex;gap:28px;align-items:flex-start">
+        <div style="flex:none;width:60px;height:60px;border-radius:18px;background:rgba(62,155,255,.10);display:flex;align-items:center;justify-content:center"><svg width="29" height="29" viewBox="0 0 24 24" fill="none" stroke="#3E9BFF" stroke-width="1.5" stroke-linecap="round"><path d="M4 16l5-5 4 3 6-7"></path><path d="M15 7h4v4"></path></svg></div>
+        <p style="margin:0;font-size:30px;line-height:1.5">Ad performance audits catch underperforming creative faster than a manual weekly review.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-label="Headcount stat" data-screen-label="07" data-speaker-notes="The photo pipeline: 135s to 11s per product, 44 staff to 4 at a million units." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:80px 104px;display:flex;flex-direction:column;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start">
+    <img src="./wasal-logo.png" alt="wasal" style="width:150px;height:auto">
+    <span style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#D4521C">Product photo processing</span>
+  </div>
+  <h2 style="margin:40px 0 0;font-size:70px;line-height:1.04;letter-spacing:-2px;font-weight:800;color:#111114;max-width:1250px;text-wrap:pretty">When the payoff is measured in <span style="color:#FF7A45">headcount</span></h2>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:58px">
+    <div style="background:rgba(255,122,69,.10);border-radius:26px;padding:46px 40px;display:flex;flex-direction:column;gap:16px">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF7A45" stroke-width="1.5" stroke-linecap="round" style="align-self:flex-end;opacity:.7"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>
+      <span style="font-size:104px;line-height:1;font-weight:800;color:#FF7A45;letter-spacing:-3px">135s</span>
+      <span style="font-size:26px;line-height:1.35">Per product, manual workflow</span>
+    </div>
+    <div style="background:rgba(63,207,142,.12);border-radius:26px;padding:46px 40px;display:flex;flex-direction:column;gap:16px">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3FCF8E" stroke-width="1.5" stroke-linecap="round" style="align-self:flex-end;opacity:.7"><path d="M13 3L5 14h6l-1 7 8-11h-6z"></path></svg>
+      <span style="font-size:104px;line-height:1;font-weight:800;color:#3FCF8E;letter-spacing:-3px">11s</span>
+      <span style="font-size:26px;line-height:1.35">Per product, AI-assisted workflow</span>
+    </div>
+    <div style="background:rgba(255,79,163,.10);border-radius:26px;padding:46px 40px;display:flex;flex-direction:column;gap:16px">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF4FA3" stroke-width="1.5" stroke-linecap="round" style="align-self:flex-end;opacity:.7"><circle cx="9" cy="8" r="3.2"></circle><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5"></path><path d="M16 11.2A3.2 3.2 0 0 0 16 5"></path><path d="M18 19c0-2.3-.9-3.9-2.4-4.7"></path></svg>
+      <span style="font-size:104px;line-height:1;font-weight:800;color:#FF4FA3;letter-spacing:-3px">44</span>
+      <span style="font-size:26px;line-height:1.35">Staff needed manually at 1M units</span>
+    </div>
+    <div style="background:rgba(123,92,255,.10);border-radius:26px;padding:46px 40px;display:flex;flex-direction:column;gap:16px">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7B5CFF" stroke-width="1.5" stroke-linecap="round" style="align-self:flex-end;opacity:.7"><circle cx="9" cy="8" r="3.2"></circle><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5"></path></svg>
+      <span style="font-size:104px;line-height:1;font-weight:800;color:#7B5CFF;letter-spacing:-3px">4</span>
+      <span style="font-size:26px;line-height:1.35">Staff needed with AI, same output</span>
+    </div>
+  </div>
+  <p style="margin:auto 0 20px;font-size:34px;line-height:1.5;max-width:1400px">About 135 seconds per product manually versus about 11 seconds with an AI-assisted workflow. At 1 million units, that is roughly 4 staff instead of 44 for the same output.</p>
+</section>
+
+<section data-label="Part 2 divider" data-screen-label="08" data-speaker-notes="Pick the right tool for the task; that is where most of the gain is." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:100px 140px;display:flex;flex-direction:column;justify-content:center;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <span style="font-size:26px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#FF4FA3">Part 2</span>
+  <h2 style="margin:34px 0 0;font-size:132px;line-height:0.96;letter-spacing:-4px;font-weight:800;background:linear-gradient(90deg,#FF4FA3,#7B5CFF 60%,#3E9BFF);-webkit-background-clip:text;background-clip:text;color:transparent">Meet the toolkit</h2>
+  <p style="margin:44px 0 0;font-size:34px;line-height:1.5;max-width:1000px">AI is not one tool. Picking the right one for the task is most of the productivity gain.</p>
+</section>
+
+<section data-label="Ask or delegate" data-screen-label="09" data-speaker-notes="Chat for quick single-step work, Cowork for messy multi-step jobs." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:88px 104px;display:flex;flex-direction:column;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start">
+    <img src="./wasal-logo.png" alt="wasal" style="width:150px;height:auto">
+    <span style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#7B5CFF">Everyday use</span>
+  </div>
+  <h2 style="margin:48px 0 0;font-size:74px;line-height:1.04;letter-spacing:-2px;font-weight:800;color:#111114;max-width:1300px;text-wrap:pretty">Two everyday modes: <span style="color:#7B5CFF">ask</span>, or <span style="color:#FF4FA3">delegate</span></h2>
+  <div style="flex:1;display:flex;gap:34px;margin-top:60px;align-items:stretch;padding-bottom:10px">
+    <div style="flex:1;background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);border-radius:28px;box-shadow:0 20px 60px rgba(90,70,150,.10);padding:48px 46px;display:flex;flex-direction:column;gap:26px">
+      <div style="width:64px;height:64px;border-radius:20px;background:rgba(123,92,255,.10);display:flex;align-items:center;justify-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7B5CFF" stroke-width="1.5" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-3.3-6.5"></path><path d="M4 20l1.6-4.2"></path><path d="M20 4v5h-5"></path></svg></div>
+      <span style="font-size:40px;font-weight:700;color:#111114">Claude Chat</span>
+      <p style="margin:0;font-size:30px;line-height:1.5">A conversation, best for quick single-step work.</p>
+    </div>
+    <div style="flex:1;background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);border-radius:28px;box-shadow:0 20px 60px rgba(90,70,150,.10);padding:48px 46px;display:flex;flex-direction:column;gap:26px">
+      <div style="width:64px;height:64px;border-radius:20px;background:rgba(255,79,163,.10);display:flex;align-items:center;justify-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF4FA3" stroke-width="1.5" stroke-linecap="round"><path d="M3 7.5A1.5 1.5 0 0 1 4.5 6H9l2 2.5h8.5A1.5 1.5 0 0 1 21 10v7.5A1.5 1.5 0 0 1 19.5 19h-15A1.5 1.5 0 0 1 3 17.5z"></path></svg></div>
+      <span style="font-size:40px;font-weight:700;color:#111114">Claude Cowork</span>
+      <p style="margin:0;font-size:30px;line-height:1.5">Takes a folder and a plain-language goal and executes the whole task on its own, best for messy multi-step work like turning scattered notes into a finished report.</p>
+    </div>
+  </div>
+</section>
+
+<section data-label="Inside your tools" data-screen-label="10" data-speaker-notes="Excel, PowerPoint, Chrome, Slack. No new app to learn." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:76px 104px;display:flex;flex-direction:column;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start">
+    <img src="./wasal-logo.png" alt="wasal" style="width:150px;height:auto">
+    <span style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1F6FD6">Where it plugs in</span>
+  </div>
+  <h2 style="margin:34px 0 0;font-size:66px;line-height:1.04;letter-spacing:-2px;font-weight:800;color:#111114;max-width:1200px;text-wrap:pretty">It also lives inside <span style="color:#3E9BFF">the tools you already use</span></h2>
+  <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:40px;margin-top:22px">
+    <div style="display:flex;flex-direction:column;gap:24px;width:470px">
+      <div style="background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);border-radius:24px;box-shadow:0 20px 60px rgba(90,70,150,.10);padding:28px 32px;display:flex;gap:22px;align-items:center">
+        <div style="flex:none;width:56px;height:56px;border-radius:17px;background:rgba(63,207,142,.12);display:flex;align-items:center;justify-content:center"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#3FCF8E" stroke-width="1.5" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="3"></rect><path d="M4 10h16"></path><path d="M10 10v10"></path></svg></div>
+        <p style="margin:0;font-size:27px;line-height:1.4">Claude in Excel builds formulas and cleans data inside the sheet.</p>
+      </div>
+      <div style="background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);border-radius:24px;box-shadow:0 20px 60px rgba(90,70,150,.10);padding:28px 32px;display:flex;gap:22px;align-items:center">
+        <div style="flex:none;width:56px;height:56px;border-radius:17px;background:rgba(255,122,69,.12);display:flex;align-items:center;justify-content:center"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#FF7A45" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="5" width="18" height="12" rx="2.5"></rect><path d="M9 21h6"></path><path d="M12 17v4"></path></svg></div>
+        <p style="margin:0;font-size:27px;line-height:1.4">Claude in PowerPoint turns an outline into a formatted deck.</p>
+      </div>
+    </div>
+    <div style="flex:none;position:relative;width:390px;height:390px;display:flex;align-items:center;justify-content:center">
+      <div style="position:absolute;inset:-46px;border-radius:50%;background:conic-gradient(from 205deg,#9EC2FF,#FFB6DE,#FFCFA8,#C3A9FF,#9EC2FF);filter:blur(46px);opacity:.75"></div>
+      <div style="position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 30% 22%,rgba(255,255,255,.92),rgba(255,255,255,.18) 38%,rgba(255,255,255,0) 58%),conic-gradient(from 195deg,#A8C8FF,#EEC4FF,#FFC9A8,#C8B4FF,#A8C8FF);box-shadow:inset 0 -34px 64px rgba(255,255,255,.75),inset 0 22px 44px rgba(255,255,255,.5),0 34px 84px rgba(123,92,255,.24)"></div>
+      <span style="position:relative;font-size:34px;font-weight:700;color:#111114;text-align:center;line-height:1.25">One assistant,<br>four places</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:24px;width:470px">
+      <div style="background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);border-radius:24px;box-shadow:0 20px 60px rgba(90,70,150,.10);padding:28px 32px;display:flex;gap:22px;align-items:center">
+        <div style="flex:none;width:56px;height:56px;border-radius:17px;background:rgba(62,155,255,.12);display:flex;align-items:center;justify-content:center"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#3E9BFF" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"></circle><path d="M3.5 12h17"></path><path d="M12 3.5c2.5 2.6 2.5 14 0 17"></path></svg></div>
+        <p style="margin:0;font-size:27px;line-height:1.4">Claude in Chrome browses and acts on websites.</p>
+      </div>
+      <div style="background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);border-radius:24px;box-shadow:0 20px 60px rgba(90,70,150,.10);padding:28px 32px;display:flex;gap:22px;align-items:center">
+        <div style="flex:none;width:56px;height:56px;border-radius:17px;background:rgba(255,79,163,.12);display:flex;align-items:center;justify-content:center"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#FF4FA3" stroke-width="1.5" stroke-linecap="round"><path d="M9 4v16"></path><path d="M15 4v16"></path><path d="M4 9h16"></path><path d="M4 15h16"></path></svg></div>
+        <p style="margin:0;font-size:27px;line-height:1.4">Claude Tag lets anyone tag Claude directly in Slack, no new app to open.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-label="Claude Code" data-screen-label="11" data-speaker-notes="The agentic tool behind the portfolio. Most of the room will not touch it." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:88px 104px;display:flex;flex-direction:column;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <img src="./wasal-logo.png" alt="wasal" style="width:150px;height:auto">
+  <div style="display:flex;gap:80px;margin-top:64px;align-items:center">
+    <div style="flex:1">
+      <span style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#D4521C">Under the hood</span>
+      <h2 style="margin:26px 0 0;font-size:76px;line-height:1.02;letter-spacing:-2px;font-weight:800;color:#111114;text-wrap:pretty">And for the harder problems: <span style="background:linear-gradient(90deg,#FF7A45,#FF4FA3);-webkit-background-clip:text;background-clip:text;color:transparent">Claude Code</span></h2>
+    </div>
+    <div style="flex:1;background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);border-radius:28px;box-shadow:0 20px 60px rgba(90,70,150,.10);padding:48px 46px;display:flex;flex-direction:column;gap:30px">
+      <div style="width:64px;height:64px;border-radius:20px;background:rgba(255,122,69,.10);display:flex;align-items:center;justify-content:center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF7A45" stroke-width="1.5" stroke-linecap="round"><path d="M9 8l-4 4 4 4"></path><path d="M15 8l4 4-4 4"></path></svg></div>
+      <p style="margin:0;font-size:30px;line-height:1.5">The agentic tool actually used to build the dashboards and automations shown earlier.</p>
+      <p style="margin:0;font-size:30px;line-height:1.5">Not something most of this room needs to touch, but almost everything in the portfolio started as a plain-language request to it.</p>
+    </div>
+  </div>
+</section>
+
+<section data-label="Live demo" data-screen-label="12" data-speaker-notes="Switch to the live demo here. Keep it to one thing, done end to end." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:76px 104px;display:flex;flex-direction:column;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start">
+    <img src="./wasal-logo.png" alt="wasal" style="width:150px;height:auto">
+    <span style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#1E9A66">Demo</span>
+  </div>
+  <div style="flex:1;display:flex;gap:70px;align-items:center">
+    <div style="flex:1.02;display:flex;flex-direction:column;gap:32px">
+      <h2 style="margin:0;font-size:84px;line-height:1;letter-spacing:-3px;font-weight:800;color:#111114">Let's watch it happen</h2>
+      <p style="margin:0;font-size:32px;line-height:1.45;max-width:760px">One thing happening in real time beats ten slides.</p>
+      <div style="display:flex;flex-direction:column;gap:18px;max-width:760px">
+        <div style="background:rgba(255,255,255,.66);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.85);box-shadow:0 22px 60px rgba(90,70,150,.16);border-radius:24px;padding:28px 32px;display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#7B5CFF">Option A</span>
+          <p style="margin:0;font-size:29px;line-height:1.4">Generating the executive daily digest end to end.</p>
+        </div>
+        <div style="background:rgba(255,255,255,.66);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.85);box-shadow:0 22px 60px rgba(90,70,150,.16);border-radius:24px;padding:28px 32px;display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#FF4FA3">Option B</span>
+          <p style="margin:0;font-size:29px;line-height:1.4">A Cowork task turning a stack of screenshots into a formatted report.</p>
+        </div>
+      </div>
+    </div>
+    <div style="flex:0.98;position:relative;height:100%;display:flex;align-items:center;justify-content:center">
+      <div style="position:absolute;width:560px;height:560px;border-radius:50%;background:conic-gradient(from 210deg,#9EC2FF,#FFB6DE,#FFCFA8,#C3A9FF,#9EC2FF);filter:blur(70px);opacity:.45"></div>
+      <div style="position:relative;height:104%;max-height:880px;display:flex;align-items:center;justify-content:center">
+        <div style="position:absolute;bottom:2%;left:50%;transform:translateX(-50%);width:600px;height:340px;border-radius:50%;background:radial-gradient(60% 60% at 50% 60%,rgba(255,182,222,.55),rgba(158,194,255,.42) 55%,rgba(255,207,168,0) 78%);filter:blur(58px)"></div>
+        <div style="position:absolute;top:8%;right:4%;width:130px;height:130px;border-radius:50%;background:radial-gradient(circle at 34% 30%,rgba(255,255,255,.9),rgba(195,169,255,.45) 60%,rgba(195,169,255,0));filter:blur(10px)"></div>
+        <div style="position:absolute;bottom:20%;left:2%;width:86px;height:86px;border-radius:50%;background:radial-gradient(circle at 34% 30%,rgba(255,255,255,.85),rgba(255,182,222,.42) 60%,rgba(255,182,222,0));filter:blur(8px)"></div>
+        <img src="./mockup-digest-model.png" alt="hand holding a phone showing the Wasal daily digest" style="position: static; height: 795px; width: 575px; display: block; filter: drop-shadow(0 60px 52px rgba(90,70,150,.20)); top: 400px; z-index: 1; transform: translate(26px, 210px) rotate(10deg); flex-grow: 0"></div>
+      <div style="position: absolute; z-index: 3; top: 40px; left: 12px; background: rgba(255,255,255,.66); backdrop-filter: blur(26px); -webkit-backdrop-filter: blur(26px); border: 1px solid rgba(255,255,255,.85); box-shadow: 0 22px 60px rgba(90,70,150,.16); border-radius: 22px; padding: 18px 24px; display: flex; align-items: center; gap: 14px; transform: translate(1px, 45px)">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7B5CFF" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>
+        <span style="font-size:26px;font-weight:600;color:#111114">Digest building</span>
+      </div>
+      <div style="position:absolute;z-index:3;bottom:130px;right:-10px;background:rgba(255,255,255,.66);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.85);box-shadow:0 22px 60px rgba(90,70,150,.16);border-radius:22px;padding:18px 24px;display:flex;align-items:center;gap:14px">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1E9A66" stroke-width="1.6" stroke-linecap="round"><path d="M4 12.5l5 5L20 6.5"></path></svg>
+        <span style="font-size:26px;font-weight:600;color:#111114">Ready in 40s</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-label="Part 3 divider" data-screen-label="13" data-speaker-notes="No budget needed. One recurring task is enough to start." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:100px 140px;display:flex;flex-direction:column;justify-content:center;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <span style="font-size:26px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#1F6FD6">Part 3</span>
+  <h2 style="margin:34px 0 0;font-size:132px;line-height:0.96;letter-spacing:-4px;font-weight:800;background:linear-gradient(90deg,#FF4FA3,#7B5CFF 60%,#3E9BFF);-webkit-background-clip:text;background-clip:text;color:transparent">Starting this week</h2>
+  <p style="margin:44px 0 0;font-size:34px;line-height:1.5;max-width:1000px">You do not need a project or a budget to start. You need one recurring task worth automating.</p>
+</section>
+
+<section data-label="Which tool" data-screen-label="14" data-speaker-notes="Quick reference. Tell people to screenshot this slide." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:76px 104px;display:flex;flex-direction:column;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start">
+    <img src="./wasal-logo.png" alt="wasal" style="width:150px;height:auto">
+    <span style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#7B5CFF">Quick reference</span>
+  </div>
+  <h2 style="margin:34px 0 46px;font-size:66px;line-height:1.04;letter-spacing:-2px;font-weight:800;color:#111114">Which tool for <span style="color:#7B5CFF">which task</span></h2>
+  <div style="background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);border-radius:28px;box-shadow:0 20px 60px rgba(90,70,150,.10);padding:14px 40px">
+    <div style="display:grid;grid-template-columns:1.5fr 1fr 1.2fr;gap:28px;padding:22px 0;border-bottom:1px solid rgba(17,17,20,.09)">
+      <span style="font-size:24px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#4A4A55">The task</span>
+      <span style="font-size:24px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#4A4A55">Use</span>
+      <span style="font-size:24px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#4A4A55">Why</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1.5fr 1fr 1.2fr;gap:28px;padding:24px 0;border-bottom:1px solid rgba(17,17,20,.07);align-items:center">
+      <span style="font-size:27px;line-height:1.35;color:#111114">Drafting an email, memo or first version of anything</span>
+      <span style="font-size:27px;font-weight:700;color:#7B5CFF">Claude Chat</span>
+      <span style="font-size:26px;line-height:1.35">Fastest for single-step work</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1.5fr 1fr 1.2fr;gap:28px;padding:24px 0;border-bottom:1px solid rgba(17,17,20,.07);align-items:center">
+      <span style="font-size:27px;line-height:1.35;color:#111114">A pile of files that needs to become one finished document</span>
+      <span style="font-size:27px;font-weight:700;color:#FF4FA3">Claude Cowork</span>
+      <span style="font-size:26px;line-height:1.35">Handles the whole multi-step job unattended</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1.5fr 1fr 1.2fr;gap:28px;padding:24px 0;border-bottom:1px solid rgba(17,17,20,.07);align-items:center">
+      <span style="font-size:27px;line-height:1.35;color:#111114">Building or cleaning a spreadsheet</span>
+      <span style="font-size:27px;font-weight:700;color:#3FCF8E">Claude in Excel</span>
+      <span style="font-size:26px;line-height:1.35">Works inside the sheet itself</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1.5fr 1fr 1.2fr;gap:28px;padding:24px 0;border-bottom:1px solid rgba(17,17,20,.07);align-items:center">
+      <span style="font-size:27px;line-height:1.35;color:#111114">Turning notes into a slide deck</span>
+      <span style="font-size:27px;font-weight:700;color:#FF7A45">Claude in PowerPoint</span>
+      <span style="font-size:26px;line-height:1.35">No designer needed for a first pass</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1.5fr 1fr 1.2fr;gap:28px;padding:24px 0;align-items:center">
+      <span style="font-size:27px;line-height:1.35;color:#111114">A task the team keeps redoing by hand every week</span>
+      <span style="font-size:27px;font-weight:700;color:#3E9BFF">Flag it</span>
+      <span style="font-size:26px;line-height:1.35">Likely worth automating properly</span>
+    </div>
+  </div>
+</section>
+
+<section data-label="Ground rules" data-screen-label="15" data-speaker-notes="Guardrails: IT for sensitive data, review drafts, start low risk." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:88px 104px;display:flex;flex-direction:column;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start">
+    <img src="./wasal-logo.png" alt="wasal" style="width:150px;height:auto">
+    <span style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#FF4FA3">Guardrails</span>
+  </div>
+  <h2 style="margin:48px 0 0;font-size:72px;line-height:1.04;letter-spacing:-2px;font-weight:800;color:#111114;max-width:1300px;text-wrap:pretty">A few ground rules <span style="color:#FF4FA3">before rolling this out</span></h2>
+  <div style="flex:1;display:flex;gap:30px;margin-top:60px;align-items:stretch;padding-bottom:10px">
+    <div style="flex:1;background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);border-radius:26px;box-shadow:0 20px 60px rgba(90,70,150,.10);padding:44px 42px;display:flex;flex-direction:column;gap:26px">
+      <div style="width:62px;height:62px;border-radius:19px;background:rgba(123,92,255,.12);display:flex;align-items:center;justify-content:center"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#7B5CFF" stroke-width="1.5" stroke-linecap="round"><path d="M12 3l7 3v6c0 4.3-3 7.5-7 9-4-1.5-7-4.7-7-9V6z"></path></svg></div>
+      <p style="margin:0;font-size:29px;line-height:1.5">Plan and data-handling settings differ by tier, involve IT for anything touching customer or financial data.</p>
+    </div>
+    <div style="flex:1;background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);border-radius:26px;box-shadow:0 20px 60px rgba(90,70,150,.10);padding:44px 42px;display:flex;flex-direction:column;gap:26px">
+      <div style="width:62px;height:62px;border-radius:19px;background:rgba(255,79,163,.12);display:flex;align-items:center;justify-content:center"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FF4FA3" stroke-width="1.5" stroke-linecap="round"><path d="M6 3h9l4 4v14H6z"></path><path d="M9 12h7"></path><path d="M9 16h5"></path></svg></div>
+      <p style="margin:0;font-size:29px;line-height:1.5">Treat first drafts as drafts, review before anything goes external.</p>
+    </div>
+    <div style="flex:1;background:rgba(255,255,255,.55);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid rgba(255,255,255,.8);border-radius:26px;box-shadow:0 20px 60px rgba(90,70,150,.10);padding:44px 42px;display:flex;flex-direction:column;gap:26px">
+      <div style="width:62px;height:62px;border-radius:19px;background:rgba(63,207,142,.12);display:flex;align-items:center;justify-content:center"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#3FCF8E" stroke-width="1.5" stroke-linecap="round"><path d="M4 12.5l5 5L20 6.5"></path></svg></div>
+      <p style="margin:0;font-size:29px;line-height:1.5">Start with low-risk, high-repetition tasks.</p>
+    </div>
+  </div>
+</section>
+
+<section data-label="Next step" data-screen-label="16" data-speaker-notes="Close with the ask: one task per function, results in three weeks." style="background:url(./bg-aurora.png) center/cover no-repeat,#FFFDFD;padding:100px 140px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:'Bricolage Grotesque',Inter,sans-serif;color:#4A4A55">
+  <img src="./wasal-logo.png" alt="wasal" style="width:168px;height:auto;margin-bottom:54px">
+  <span style="font-size:26px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#7B5CFF">Next step</span>
+  <h2 style="margin:30px 0 0;font-size:118px;line-height:0.98;letter-spacing:-4px;font-weight:800;background:linear-gradient(90deg,#FF7A45,#FF4FA3 45%,#7B5CFF);-webkit-background-clip:text;background-clip:text;color:transparent">One pilot per team</h2>
+  <p style="margin:42px 0 0;font-size:36px;line-height:1.5;max-width:1150px">Each function picks one recurring task to hand to AI this month. Check back in three weeks with results.</p>
+</section>
+
+</x-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;headlineVoice&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Gradient&quot;,&quot;Flat accent&quot;,&quot;Quiet ink&quot;],&quot;default&quot;:&quot;Gradient&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Voice&quot;},&quot;accentRange&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Full spectrum&quot;,&quot;Violet and pink&quot;,&quot;Cool only&quot;],&quot;default&quot;:&quot;Full spectrum&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Voice&quot;},&quot;surfaceStyle&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Liquid glass&quot;,&quot;Solid cards&quot;,&quot;Open, no cards&quot;],&quot;default&quot;:&quot;Liquid glass&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Voice&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() { this._raf = requestAnimationFrame(() => this.apply()); }
+  componentDidUpdate() { this.apply(); }
+  componentWillUnmount() { cancelAnimationFrame(this._raf); }
+
+  cache(el) {
+    if (!this._orig) this._orig = new WeakMap();
+    if (!this._orig.has(el)) this._orig.set(el, el.getAttribute('style') || '');
+    return this._orig.get(el);
+  }
+
+  // literal, case-tolerant substitution over an authored style string
+  sub(s, pairs) {
+    for (const [a, b] of pairs) {
+      s = s.split(a).join(b);
+      s = s.split(a.toLowerCase()).join(b);
+    }
+    return s;
+  }
+
+  accentPairs(range) {
+    if (range === 'Violet and pink') return [
+      ['#FF7A45', '#FF4FA3'], ['#D4521C', '#FF4FA3'],
+      ['#3FCF8E', '#7B5CFF'], ['#1E9A66', '#7B5CFF'],
+      ['#3E9BFF', '#7B5CFF'], ['#1F6FD6', '#7B5CFF'],
+      ['255,122,69', '255,79,163'], ['63,207,142', '123,92,255'], ['62,155,255', '123,92,255'],
+    ];
+    if (range === 'Cool only') return [
+      ['#FF4FA3', '#3E9BFF'], ['#FF7A45', '#7B5CFF'], ['#D4521C', '#1F6FD6'],
+      ['#3FCF8E', '#3E9BFF'], ['#1E9A66', '#1F6FD6'],
+      ['255,79,163', '62,155,255'], ['255,122,69', '123,92,255'], ['63,207,142', '62,155,255'],
+    ];
+    return [];
+  }
+
+  apply() {
+    const voice = this.props.headlineVoice ?? 'Gradient';
+    const range = this.props.accentRange ?? 'Full spectrum';
+    const surface = this.props.surfaceStyle ?? 'Liquid glass';
+    const pairs = this.accentPairs(range);
+    const ACCENTS = ['#7B5CFF', '#FF4FA3', '#FF7A45', '#3FCF8E', '#3E9BFF', '#D4521C', '#1E9A66', '#1F6FD6'];
+
+    document.querySelectorAll('section[data-screen-label] *').forEach((el) => {
+      const cur = el.getAttribute('style') || '';
+      if (!cur) return;
+      const isGradientText = /background-clip:\s*text/i.test(cur);
+      const isGlass = /backdrop-filter:\s*blur\(26px\)/i.test(cur);
+      const hasAccent = pairs.length && pairs.some(([a]) => cur.indexOf(a) >= 0 || cur.toLowerCase().indexOf(a.toLowerCase()) >= 0);
+      // only ever touch elements a tweak actually targets, so template styles are never clobbered
+      if (!isGradientText && !isGlass && !hasAccent && voice !== 'Quiet ink') return;
+      const orig = this.cache(el);
+      if (!orig) return;
+      let s = orig;
+
+      if (isGradientText && voice !== 'Gradient') {
+        const first = (orig.match(/#[0-9A-Fa-f]{6}/) || ['#7B5CFF'])[0];
+        s = s.replace(/background:[^;]+;?/i, '')
+             .replace(/-webkit-background-clip:\s*text;?/i, '')
+             .replace(/background-clip:\s*text;?/i, '')
+             .replace(/color:\s*transparent/i, 'color:' + (voice === 'Quiet ink' ? '#111114' : first));
+      }
+
+      if (voice === 'Quiet ink' && !isGradientText) {
+        const tag = el.parentElement && el.parentElement.tagName;
+        if (el.tagName === 'SPAN' && (tag === 'H1' || tag === 'H2')) {
+          ACCENTS.forEach((hex) => {
+            s = s.replace(new RegExp('color:\\s*' + hex, 'i'), 'color:#111114');
+          });
+        }
+      }
+
+      if (isGlass && surface !== 'Liquid glass') {
+        s = s.replace(/backdrop-filter:\s*blur\(26px\);?/gi, '')
+             .replace(/-webkit-backdrop-filter:\s*blur\(26px\);?/gi, '');
+        if (surface === 'Solid cards') {
+          s = s.replace(/background:\s*rgba\(255,\s*255,\s*255,[^;]+;?/i, 'background:#FFFFFF;')
+               .replace(/border:\s*1px solid rgba\(255,\s*255,\s*255,[^;]+;?/i, 'border:1px solid rgba(17,17,20,.06);')
+               .replace(/box-shadow:[^;]+;?/i, 'box-shadow:0 14px 36px rgba(90,70,150,.10);');
+        } else {
+          s = s.replace(/background:\s*rgba\(255,\s*255,\s*255,[^;]+;?/i, 'background:transparent;')
+               .replace(/border:\s*1px solid rgba\(255,\s*255,\s*255,[^;]+;?/i, '')
+               .replace(/box-shadow:[^;]+;?/i, '');
+        }
+      }
+
+      if (pairs.length) s = this.sub(s, pairs);
+      if (s !== cur) el.setAttribute('style', s);
+    });
+  }
+
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

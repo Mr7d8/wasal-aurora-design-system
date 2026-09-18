@@ -1,0 +1,20 @@
+export const GLYPHS = {
+  clock: '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',
+  bars: '<path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 16v-4"/><path d="M13 16V8"/><path d="M18 16v-7"/>',
+  search: '<circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/>',
+  social: '<rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.5"/>',
+  pin: '<path d="M12 21s6.5-6.2 6.5-11A6.5 6.5 0 0 0 5.5 10c0 4.8 6.5 11 6.5 11z"/><circle cx="12" cy="10" r="2.4"/>',
+  check: '<path d="M4 12.5l5 5L20 6.5"/>',
+  bolt: '<path d="M13 3L5 14h6l-1 7 8-11h-6z"/>',
+  plus: '<path d="M12 5v14"/><path d="M5 12h14"/>',
+  trend: '<path d="M4 16l5-5 4 3 6-7"/><path d="M15 7h4v4"/>',
+  chat: '<path d="M20 12a8 8 0 1 1-3.3-6.5"/><path d="M4 20l1.6-4.2"/>',
+  folder: '<path d="M3 7.5A1.5 1.5 0 0 1 4.5 6H9l2 2.5h8.5A1.5 1.5 0 0 1 21 10v7.5A1.5 1.5 0 0 1 19.5 19h-15A1.5 1.5 0 0 1 3 17.5z"/>',
+  sheet: '<rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 10h16"/><path d="M10 10v10"/>',
+  deck: '<rect x="3" y="5" width="18" height="12" rx="2.5"/><path d="M9 21h6"/><path d="M12 17v4"/>',
+  globe: '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.5 2.6 2.5 14 0 17"/>',
+  code: '<path d="M9 8l-4 4 4 4"/><path d="M15 8l4 4-4 4"/>',
+  shield: '<path d="M12 3l7 3v6c0 4.3-3 7.5-7 9-4-1.5-7-4.7-7-9V6z"/>',
+  heart: '<path d="M12 20s-7-4.4-7-9.2A4 4 0 0 1 12 8a4 4 0 0 1 7 2.8C19 15.6 12 20 12 20z"/>',
+  send: '<path d="M21 4L3 11l6 2 2 6z"/>'
+};

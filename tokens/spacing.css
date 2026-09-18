@@ -1,0 +1,20 @@
+:root {
+  --space-1: 6px;
+  --space-2: 10px;
+  --space-3: 14px;
+  --space-4: 20px;
+  --space-5: 26px;
+  --space-6: 34px;
+  --space-7: 46px;
+  --space-8: 64px;
+  --space-9: 90px;
+
+  /* Slide geometry, 1920x1080 stage */
+  --slide-pad-x: 104px;
+  --slide-pad-y: 76px;
+  --slide-pad-y-loose: 100px;
+  --card-pad: 34px;
+  --card-pad-lg: 46px;
+  --card-gap: 22px;
+  --column-gap: 70px;
+}
